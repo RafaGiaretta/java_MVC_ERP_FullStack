@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Documentação do Projeto</title>
+    <style>
+      body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f7fa;
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background-color: #0073e6;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        font-size: 2.5rem;
+        margin: 0;
+      }
+
+      nav {
+        background: #ffffff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 10px 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+
+      nav a {
+        color: #0073e6;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: background 0.3s ease;
+      }
+
+      nav a:hover {
+        background: #0073e6;
+        color: #fff;
+      }
+
+      main {
+        padding: 40px 20px;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      section {
+        margin-bottom: 40px;
+      }
+
+      section h2 {
+        font-size: 2rem;
+        color: #0073e6;
+        margin-bottom: 20px;
+      }
+
+      section p,
+      section ul {
+        font-size: 1.1rem;
+        margin-bottom: 15px;
+        color: #555;
+      }
+
+      ul {
+        list-style-type: disc;
+        padding-left: 20px;
+      }
+
+      ul li {
+        margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px;
+        position: relative;
+        bottom: 0;
+      }
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        color: #0073e6;
+        margin-top: 30px;
+        margin-bottom: 20px;
+      }
+
+      /* For smaller screens */
+      @media (max-width: 768px) {
+        nav {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        main {
+          padding: 20px;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+
+        nav a {
+          margin-bottom: 10px;
+          padding: 10px;
+        }
+      }
+
+      #topBtn {
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: #0073e6;
+        color: white;
+        text-align: center;
+        padding: 15px;
+        border-radius: 4px;
+        text-decoration: none;
+      }
+
+      #topBtn:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+
+  <body>
+    <a href="#" id="topBtn" title="Voltar ao topo">↑</a>
+    <header>
+      <h1>Documentação do Projeto</h1>
+    </header>
+    <nav>
+      <a href="#introducao">Introdução</a>
+      <a href="#visaogeral">Visão Geral</a>
+      <a href="#requisitos">Requisitos</a>
+      <a href="#requisitos-sistema">Requisitos do Sistema</a>
+      <a href="#diagramas">Diagramas</a>
+      <a href="#tecnologias">Tecnologias Utilizadas</a>
+    </nav>
+    <main>
+      <section id="introducao">
+        <h2>Introdução</h2>
+        <p>
+          Este documento tem como propósito servir como referência principal
+          para a documentação do sistema ERP (Enterprise Resource Planning) a
+          ser desenvolvido. Ele oferece uma visão abrangente e detalhada do
+          sistema, alinhando o desenvolvimento às expectativas do cliente e
+          garantindo que os requisitos sejam compreendidos de forma clara e
+          objetiva.
+        </p>
+        <p>
+          O sistema consiste em um ERP destinado ao planejamento e gestão dos
+          recursos de uma empresa, administrado pelos sócios. Suas principais
+          funcionalidades incluem:
+        </p>
+        <ul>
+          <li>Registro de produtos produzidos pela empresa;</li>
+          <li>Controle de estoque;</li>
+          <li>Cadastro de clientes e pedidos;</li>
+          <li>Controle de entradas e saídas financeiras.</li>
+        </ul>
+        <p>
+          O público-alvo deste documento inclui futuros desenvolvedores que
+          integrarão a equipe, analistas de negócio, membros da equipe de
+          desenvolvimento e clientes finais. Ele visa facilitar a compreensão
+          dos processos envolvidos, além de orientar e padronizar o
+          desenvolvimento do sistema.
+        </p>
+      </section>
+      <section id="visaogeral">
+        <h2>Visão Geral do Sistema</h2>
+        <p>
+          O sistema ERP será projetado para otimizar a gestão dos recursos
+          empresariais, com foco especial no controle de estoque e no
+          gerenciamento de pedidos. Este se propõe como uma solução integrada
+          que permitirá a administração centralizada nos processos essenciais da
+          empresa. Com sua implementação, esperamos trazer uma melhor eficiência
+          no registro e controle de produtos, além de maior organização e
+          visibilidade sobre o fluxo de pedidos e estoque.
+        </p>
+        <p>
+          Este sistema será importante para reduzir erros manuais e
+          comunicativos, melhorar a precisão das informações e fornecer insights
+          valiosos sobre a movimentação de produtos e finanças. Com a
+          possibilidade de ferramentas para criação de relatórios detalhados,
+          também ajudará na tomada de decisões estratégicas pelos sócios e
+          gestores.
+        </p>
+        <p>O sistema conta com as seguintes funcionalidades principais:</p>
+        <ul>
+          <li>
+            Cadastro e controle de clientes:
+            <ul>
+              <li>
+                Registro de clientes, com informações como CPF, nome, sobrenome,
+                telefone, CEP, endereço e e-mail.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Cadastro e controle de produtos:
+            <ul>
+              <li>
+                Registro detalhado de produtos, com informações como código,
+                nome, descrição, preço, quantidade e categoria.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Gerenciamento de estoque:
+            <ul>
+              <li>
+                Controle de entrada e saída de produtos, atualizando
+                automaticamente os níveis de estoque.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Emissão e controle de pedidos:
+            <ul>
+              <li>
+                Criação e acompanhamento de pedidos de clientes, incluindo
+                status e histórico de transações.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Relatórios de inventário e movimentação de estoque:
+            <ul>
+              <li>
+                Geração de relatórios personalizados para análise de inventário
+                e movimentações, possibilitando acompanhar tendências.
+              </li>
+            </ul>
+          </li>
+          <li>
+            Notificação de baixo estoque:
+            <ul>
+              <li>
+                Alertas automáticos para produtos com níveis de estoque abaixo
+                do mínimo configurado.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <p>As principais operações do sistema incluem:</p>
+        <ul>
+          <li>
+            CRUD para clientes:
+            <ul>
+              <li>Cadastrar novo cliente.</li>
+              <li>Consultar clientes e seus pedidos.</li>
+              <li>Atualizar dados do cliente.</li>
+              <li>Exclusão de cliente não poderá ser feita diretamente.</li>
+            </ul>
+          </li>
+          <li>
+            CRUD para produtos:
+            <ul>
+              <li>Criar registros de produtos.</li>
+              <li>Consultar informações sobre produtos existentes.</li>
+              <li>
+                Atualizar detalhes como preço, forma de pagamento, quantidade e
+                descrição.
+              </li>
+              <li>Excluir produtos obsoletos ou descontinuados.</li>
+            </ul>
+          </li>
+          <li>
+            CRUD para categorias:
+            <ul>
+              <li>Criar novas categorias para organização dos produtos.</li>
+              <li>Consultar todas as categorias cadastradas.</li>
+              <li>Atualizar descrições ou renomear categorias existentes.</li>
+              <li>Excluir categorias não mais utilizadas.</li>
+            </ul>
+          </li>
+          <li>
+            CRUD para pedidos:
+            <ul>
+              <li>Criar pedidos de clientes.</li>
+              <li>Consultar o histórico e status de pedidos.</li>
+              <li>
+                Atualizar pedidos com informações adicionais ou alterações.
+              </li>
+              <li>Excluir pedidos cancelados.</li>
+            </ul>
+          </li>
+          <li>
+            Controle de estoque:
+            <ul>
+              <li>
+                Registro automático de entradas e saídas durante operações de
+                vendas ou reposição.
+              </li>
+              <li>Atualização em tempo real dos níveis de estoque.</li>
+            </ul>
+          </li>
+          <li>
+            Relatórios personalizados:
+            <ul>
+              <li>
+                Geração de relatórios e exportação em formatos como PDF e Excel.
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <section id="requisitos">
+        <h2>Requisitos</h2>
+        <p>Os requisitos principais do sistema incluem:</p>
+        <ul>
+          <li>
+            Funcionalidades de CRUD para produtos, categorias, clientes e
+            pedidos.
+          </li>
+          <li>
+            Armazenamento de dados em um banco de dados relacional (MySQL).
+          </li>
+          <li>Frontend desenvolvido em Angular ou React.</li>
+          <li>Backend em Java, com integração completa entre as camadas.</li>
+        </ul>
+      </section>
+      <section id="requisitos-sistema">
+        <h2>Requisitos do Sistema</h2>
+        <h3>Requisitos Funcionais</h3>
+        <h4>Clientes:</h4>
+        <ul>
+          <li>
+            Cadastro: Deve incluir um CPF único, nome completo, telefone com
+            DDD, endereço contendo Rua, Bairro, CEP, cidade, estado e Email,
+            forma de pagamento.
+          </li>
+          <li>Consultas: Deve retornar os dados detalhados do cliente.</li>
+          <li>
+            Atualizações: Somente serão realizadas partindo do CPF do cliente.
+          </li>
+          <li>
+            Exclusão: Solicitada através do CPF do cliente, e com a
+            obrigatoriedade de uma justificativa. Não poderá ser efetuada caso
+            exista pedidos em andamento para este CPF.
+          </li>
+        </ul>
+        <h4>Produtos:</h4>
+        <ul>
+          <li>
+            Cadastro: Deve incluir nome, código, preço, uma forma de pagamento,
+            quantidade, um tipo de carne, uma categoria e um sabor.
+          </li>
+          <li>
+            Consultas: Devem retornar todas as informações solicitadas de acordo
+            com o filtro, incluindo estoque, saídas e entradas.
+          </li>
+          <li>
+            Atualizações: Serão realizadas com base no código do produto. A data
+            de validade, uma vez cadastrada, não poderá ser alterada
+            diretamente. Estoques negativos deverão ser exibidos como "falta em
+            estoque".
+          </li>
+          <li>
+            Exclusão: Solicitada através do código do produto, com a
+            obrigatoriedade de uma justificativa para o cancelamento ou
+            descontinuação da produção.
+          </li>
+        </ul>
+        <h4>Pedidos:</h4>
+        <ul>
+          <li>
+            Cadastro: Deve incluir cliente, registro automático da data, ao
+            menos um ou mais produtos, valor total e nível de urgência.
+          </li>
+          <li>
+            Consultas: Devem listar todos os pedidos ou exibir detalhes
+            específicos, como data, estado atual, produtos associados, cliente,
+            preço total e data de finalização (se finalizado).
+          </li>
+          <li>
+            Atualizações: Realizadas com base no estado do pedido, como
+            "RECEBIDO", "EM SEPARACAO", "CANCELADO" ou "FINALIZADO". Detalhes
+            adicionais e comentários poderão ser adicionados durante o
+            andamento. O nível de urgência poderá ser ajustado manualmente
+            mediante justificativa ou automaticamente conforme o tempo de
+            demora.
+          </li>
+          <li>Exclusão: Permitida em casos de cancelamento do pedido.</li>
+        </ul>
+        <h4>Estoque:</h4>
+        <ul>
+          <li>
+            Reposição: Atualizações automáticas baseadas no ID do produto, tanto
+            para reposição quanto para remoção após vendas.
+          </li>
+          <li>
+            Validade: Produtos fora da validade gerarão alertas e não serão
+            contabilizados no estoque ativo, mas permanecerão visíveis em uma
+            lista específica.
+          </li>
+          <li>
+            Atualizações em tempo real: Permitirão acompanhamento simultâneo
+            para evitar conflitos de pedidos ou vendas sem estoque, além de
+            auxiliar na produção conforme a demanda.
+          </li>
+        </ul>
+        <h4>Relatórios:</h4>
+        <ul>
+          <li>
+            Geração: Relatórios analíticos baseados em filtros como pedidos por
+            período, clientes, entradas e saídas de produtos.
+          </li>
+          <li>Exportação: Disponível em formatos PDF e Excel.</li>
+        </ul>
+        <h3>Requisitos Não Funcionais</h3>
+        <ul>
+          <li>
+            Desempenho: O sistema deve suportar um alto volume de movimentações
+            sem degradação de desempenho. (O limite será definido posteriormente
+            após testes).
+          </li>
+          <li>
+            Usabilidade: Interface clara e intuitiva, acessível para usuários
+            com diferentes níveis de conhecimento técnico.
+          </li>
+          <li>
+            Segurança: Implementação de criptografia para dados sensíveis,
+            garantindo a integridade e confidencialidade das informações
+            armazenadas.
+          </li>
+        </ul>
+      </section>
+      <section id="diagramas">
+        <h2>Diagramas</h2>
+        <h3>Diagrama de Classe</h3>
+        <img
+          src="https://i.ibb.co/99wWBG4/Diagrama-classe.jpg"
+          alt="Diagrama de Classe"
+          width="600"
+          height="400"
+        />
+        <h4>Descrição</h4>
+        <ul>
+          <li>
+            Um PEDIDO deve conter apenas um cliente, e um ou vários PRODUTO
+          </li>
+          <li>Um CLIENTE pode ter um ou vários pedidos</li>
+          <li>
+            Um PRODUTO deve conter uma CATEGORIA e pode pertencer a nenhum ou
+            vários PEDIDO
+          </li>
+        </ul>
+        <h3>Diagrama de Entidade e Relacionamento</h3>
+
+        <img
+          src="https://i.ibb.co/Mc671vP/DER.jpg"
+          alt="Diagrama de Entidade e Relacionamento"
+          width="600"
+          height="400"
+        />
+        <ul>
+          <li>
+            Um CLIENTE vai conter cpf como chave primaria, nome, sobrenome,
+            telefone, cep, estado, cidade, bairro, rua e número, e pode ter
+            nenhum ou vários PEDIDO.
+          </li>
+          <li>
+            Um PEDIDO contém n_pedido como chave primaria, cpf_cliente como
+            chave estrangeira da tabela CLIENTE, cod_produto como chave
+            estrangeira da tabela PRODUTO, forma_pagamento, situação,
+            valor_total e data_pedido, obrigatoriamente deve ter um CLIENTE e
+            pode conter UM ou VARIOS PRODUTO.
+          </li>
+          <li>
+            Um PRODUTO contém cod_produto como chave primaria, nome, descrição,
+            preco, quantidade e categoria como chave estrangeira de CATEGORIA.
+          </li>
+          <li>
+            Um PRODUTO so pode pertencer a UMA CATEGORAI e pode pertencer a
+            NENHUM ou VARIOS PEDIDOS.
+          </li>
+          <li>
+            CATEGORIA contém cod_cat como chave primaria e descrição. Pode
+            pertencer a NENHUM ou VARIOS PRODUTO.
+          </li>
+          <li>
+            ITENS_PEDIDO e uma classe associativa entre PRODUTO e PEDIDO
+            contendo n_pedido, cod_produto, quantidade e preco_unitario.
+          </li>
+        </ul>
+      </section>
+
+      <h3>Diagrama de Caso de Uso (UseCase)</h3>
+      <img
+        src="https://i.ibb.co/jrRw1XH/UseCase.jpg"
+        alt="Diagrama de Caso de Uso"
+        width="600"
+        height="400"
+      />
+
+      <section id="tecnologias">
+        <h2>Tecnologias Utilizadas</h2>
+        <h3>Front-end:</h3>
+        <p>
+          O front-end da aplicação será desenvolvido utilizando Angular, um
+          framework baseado em TypeScript que implementa o conceito de "Single
+          Page Application" (SPA). Nesse modelo, apenas uma única página HTML é
+          carregada inicialmente, e o conteúdo é atualizado dinamicamente
+          conforme as interações do usuário.<br />
+          Essa abordagem:
+        </p>
+        <ul>
+          <li>Elimina a necessidade de recarregar páginas inteiras</li>
+          <li>Resultando em maior desempenho</li>
+          <li>Melhor experiência do usuário</li>
+          <li>
+            Navegação otimizada e um desenvolvimento modular e reutilizável
+          </li>
+        </ul>
+        <h3>Back-end:</h3>
+        <p>
+          O back-end será implementado em Java, adotando o padrão arquitetural
+          Model-View-Controller (MVC), que organiza a aplicação em três camadas
+          principais:
+        </p>
+        <ul>
+          <li>
+            Model: Responsável pela lógica de negócios e pela interação com o
+            banco de dados.
+          </li>
+          <li>
+            View: Encarregada de apresentar os dados ao usuário por meio da
+            interface.
+          </li>
+          <li>
+            Controller: Atua como intermediário, gerenciando a comunicação entre
+            o usuário, a interface e a lógica de negócios.
+          </li>
+        </ul>
+        <p>
+          Essa estrutura permite que o backend se comunique diretamente com o
+          banco de dados para executar operações CRUD (Create, Read, Update,
+          Delete), garantindo uma aplicação escalável e de fácil manutenção.
+        </p>
+        <h3>Infraestrutura:</h3>
+        <p>
+          A aplicação será hospedada na AWS (Amazon Web Services), selecionada
+          por sua confiabilidade, escalabilidade e ampla gama de serviços de
+          suporte. A AWS também oferece opções gratuitas, como o AWS Free Tier,
+          que possibilitam realizar testes e implementar protótipos sem custo
+          inicial, garantindo alta disponibilidade e segurança na produção.
+        </p>
+      </section>
+    </main>
+    <footer>
+      <p>
+        &copy; 2025 - Sistema ERP para Estudo/Projeto. Todos os direitos
+        reservados.
+      </p>
+    </footer>
+  </body>
+</html>
