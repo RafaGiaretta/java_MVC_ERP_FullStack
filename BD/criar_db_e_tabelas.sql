@@ -67,7 +67,7 @@ CREATE TABLE categoria(
 /*
 CREATE TABLE hist_produto(
 	cod_produto INT ,
-    preco_atual DECIMAL(8,2),
+    preco_na_data DECIMAL(8,2),
     data_mod DATE
 );
 */
