@@ -2,7 +2,7 @@
 
 USE db_casa7;
 
-/*
+
 CREATE TABLE cliente(
 	cpf VARCHAR(50) PRIMARY KEY,
 	nome VARCHAR(50) NOT NULL,
@@ -10,8 +10,8 @@ CREATE TABLE cliente(
 	telefone VARCHAR(20), 
 	endereco INT NOT NULL
 );
-*/
-/*
+
+
 CREATE TABLE endereco(
 	cod_end INT AUTO_INCREMENT PRIMARY KEY,
     cep VARCHAR(10),
@@ -21,8 +21,8 @@ CREATE TABLE endereco(
     rua VARCHAR(100),
     numero INT
 );
-*/
-/*
+
+
 CREATE TABLE pedido(
 	n_pedido INT AUTO_INCREMENT PRIMARY KEY,
     cpf_cliente VARCHAR(50) NOT NULL,
@@ -32,8 +32,8 @@ CREATE TABLE pedido(
     valor_total DECIMAL(8,2),
     data_pedido date
 );
-*/
-/*
+
+
 CREATE TABLE produto(
 	cod_produto INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100) NOT NULL,
@@ -42,32 +42,32 @@ CREATE TABLE produto(
     quantidade INT,
     categoria INT
 );
-*/
-/*
+
+
 CREATE TABLE hist_status(
 	n_pedido INT,
     status_pedidos VARCHAR(50),
     data_alteracao DATE 
 );
-*/
-/*
+
+
 CREATE TABLE itens_pedido(
 	n_pedido INT,
     cod_produto INT,
     quantidade INT,
     preco_unitario DECIMAL (8,2)
 );
-*/
-/*
+
+
 CREATE TABLE categoria(
 	cod_cat INT AUTO_INCREMENT PRIMARY KEY,
     descricao VARCHAR(100)
 );
-*/
-/*
+
+
 CREATE TABLE hist_produto(
 	cod_produto INT ,
     preco_na_data DECIMAL(8,2),
     data_mod DATE
 );
-*/
+
