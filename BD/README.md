@@ -23,3 +23,8 @@ Este diretório contém os arquivos relacionados ao Diagrama de Entidade e Relac
    Execute o arquivo `criar_db_e_tabelas.sql` para criar o banco de dados e as tabelas básicas:
    ```sql
    source caminho/para/criar_db_e_tabelas.sql;
+   
+3. **Execução do Script de configuracao**  
+   Execute o arquivo `confchaves.sql` para criar o banco de dados e as tabelas básicas:
+   ```sql
+   source caminho/para/confchaves.sql;
