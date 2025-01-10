@@ -46,7 +46,7 @@ CREATE TABLE produto(
 
 CREATE TABLE hist_status(
 	n_pedido INT,
-    status_pedidos VARCHAR(50),
+    status_pedido VARCHAR(50),
     data_alteracao DATE 
 );
 

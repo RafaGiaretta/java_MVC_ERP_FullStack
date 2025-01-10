@@ -1,6 +1,6 @@
 # Projeto Acadêmico: DER e Banco de Dados
 
-Este diretório contém os arquivos relacionados ao Diagrama de Entidade e Relacionamento (DER) e à implementação do banco de dados para fins acadêmicos práticos do projeto. 
+Este diretório contém os arquivos relacionados ao Diagrama de Entidade e Relacionamento (DER) e à implementação do banco de dados para fins acadêmicos práticos do projeto.
 
 ## Conteúdo da Pasta `BD`
 
@@ -23,8 +23,18 @@ Este diretório contém os arquivos relacionados ao Diagrama de Entidade e Relac
    Execute o arquivo `criar_db_e_tabelas.sql` para criar o banco de dados e as tabelas básicas:
    ```sql
    source caminho/para/criar_db_e_tabelas.sql;
-   
+
+   ```
 3. **Execução do Script de configuracao**  
-   Execute o arquivo `confchaves.sql` para criar o banco de dados e as tabelas básicas:
+   Execute o arquivo `confchaves.sql` para configurar as chaves (PK/FK):
+
    ```sql
    source caminho/para/confchaves.sql;
+
+   ```
+
+4. **Execução do Script de configuracao dos Triggers de auditoria**  
+   Execute o arquivo `confTriggers.sql` para criar os triggers para controle de alteracoes:
+   ```sql
+   source caminho/para/confTriggers.sql;
+   ```
