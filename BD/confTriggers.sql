@@ -1,6 +1,26 @@
 DELIMITER //
-CREATE TRIGGER historico_status_pedido
-BEFORE UPDATE ON pedido
+CREATE TRIGGER historico_inicial_preco_produto
+AFTER INSERT ON produto
+FOR EACH ROW
+BEGIN 
+	INSERT INTO hist_produto
+    VALUES (NEW.cod_produto, NEW.preco, NOW());
+END;
+//
+
+DELIMITER // 
+CREATE TRIGGER historico_inicial_pedido
+AFTER INSERT ON pedido
+FOR EACH ROW
+BEGIN 
+	INSERT INTO hist_pedido
+    VALUES (NEW.cod_produto, NEW.preco, NOW());
+END;
+//
+
+DELIMITER // 
+CREATE TRIGGER historico_inicial_pedido
+AFTER INSERT ON pedido
 FOR EACH ROW
 BEGIN 
 	INSERT INTO hist_status (n_pedido, status_pedido, data_alteracao)
