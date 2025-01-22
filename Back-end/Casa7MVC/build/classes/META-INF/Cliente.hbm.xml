@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC
+
+"-//Hibernate/Hibernate Mapping DTD//EN"
+
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+<class name = "entities.Cliente" table = "tb_cliente">
+
+<id name = "cpf" type = "string" column = "cpf">
+
+<generator class="native"/>
+
+</id>
+
+<property name = "nome" column = "nome" type = "string"/>
+
+<property name = "sobrenome" column = "sobrenome" type = "string"/>
+
+<property name = "telefone" column = "telefone" type = "string"/>
+
+<property name = "endereco" column = "endereco" type = "integer"/>
+
+</class>
+
+</hibernate-mapping>

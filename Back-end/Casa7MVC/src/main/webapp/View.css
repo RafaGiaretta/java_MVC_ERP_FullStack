@@ -1,0 +1,19 @@
+table {
+	width: 100%;
+	border: 1px solid #4CAF50;
+}
+
+tr:nth-child(even) {
+	background-color: #f3f3f3
+}
+
+tr {
+	height: 20px;
+}
+
+tr#myHeader {
+	font-family: verdana, arial;
+	background-color: #4CAF50;
+	color: white;
+	height: 30px;
+}

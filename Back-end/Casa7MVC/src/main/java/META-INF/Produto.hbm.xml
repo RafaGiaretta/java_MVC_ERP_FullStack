@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+
+	<class name="entities.Produto" table="tb_produto">
+
+		<id name="cod_produto" type="integer" column="cod_produto">
+
+			<generator class="native" />
+
+		</id>
+
+		<property name="nome" column="nome" type="string" />
+
+		<property name="descricao" column="descricao" type="string" />
+
+		<property name="preco" column="preco" type="double" />
+
+		<property name="quantidade" column="quantidade" type="integer" />
+
+		<property name="categoria" column="categoria" type="integer" />
+
+	</class>
+
+</hibernate-mapping>
