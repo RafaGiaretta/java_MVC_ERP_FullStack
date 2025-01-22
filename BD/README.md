@@ -38,3 +38,5 @@ Este diretório contém os arquivos relacionados ao Diagrama de Entidade e Relac
    ```sql
    source caminho/para/confTriggers.sql;
    ```
+
+Sobre Triggers: [Triggers em SQL](https://www.linkedin.com/posts/rafael-giaretta-6a5014115_triggers-ou-gatilhos-s%C3%A3o-mecanismos-autom%C3%A1ticos-activity-7283643560216645632-J8mo?utm_source=share&utm_medium=member_desktop).
