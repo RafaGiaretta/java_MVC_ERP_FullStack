@@ -11,7 +11,7 @@ http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd">
 
 			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver" />
 
-			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1/db_casa7" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://127.0.0.1/db_erp" />
 
 			<property name="javax.persistence.jdbc.user" value="root" />
 

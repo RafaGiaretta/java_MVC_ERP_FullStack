@@ -1,6 +1,6 @@
 -- CREATE DATABASE  db_casa7;
 
-USE db_casa7;
+USE db_erp;
 
 
 CREATE TABLE cliente(
