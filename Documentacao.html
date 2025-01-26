@@ -222,7 +222,7 @@
             <ul>
               <li>
                 Registro de clientes, com informações como CPF, nome, sobrenome,
-                telefone, CEP, endereço e e-mail.
+                telefone, endereco, endereço e e-mail.
               </li>
             </ul>
           </li>
@@ -346,7 +346,7 @@
           <li>
             Armazenamento de dados em um banco de dados relacional (MySQL).
           </li>
-          <li>Frontend desenvolvido em Angular ou React.</li>
+          <li>Frontend desenvolvido em Angular.</li>
           <li>Backend em Java, com integração completa entre as camadas.</li>
         </ul>
       </section>
@@ -357,12 +357,11 @@
         <ul>
           <li>
             Cadastro: Deve incluir um CPF único, nome completo, telefone com
-            DDD, endereço contendo Rua, Bairro, CEP, cidade, estado e Email,
-            forma de pagamento.
+            DDD, endereço contendo , Estado, Cidade, Bairro, Rua, Numero, Email.
           </li>
           <li>Consultas: Deve retornar os dados detalhados do cliente.</li>
           <li>
-            Atualizações: Somente serão realizadas partindo do CPF do cliente.
+            Atualizações: Somente serão realizadas partindo dos dados consultados pelo CPF do cliente atraves do sistema.
           </li>
           <li>
             Exclusão: Solicitada através do CPF do cliente, e com a
@@ -460,10 +459,10 @@
         <h2>Diagramas</h2>
         <h3>Diagrama de Classe</h3>
         <img
-          src="https://i.ibb.co/99wWBG4/Diagrama-classe.jpg"
+          src="https://i.ibb.co/WHFhK03/image.png"
           alt="Diagrama de Classe"
-          width="600"
-          height="400"
+          width="1000"
+          height="800"
         />
         <h4>Descrição</h4>
         <ul>
@@ -485,8 +484,7 @@
         <ul>
           <li>
             Um CLIENTE vai conter cpf como chave primaria, nome, sobrenome,
-            telefone, cep, estado, cidade, bairro, rua e número, e pode ter
-            nenhum ou vários PEDIDO.
+            telefone, e endereco e pode ter nenhum ou vários PEDIDO.
           </li>
           <li>
             Um PEDIDO contém n_pedido como chave primaria, cpf_cliente como
@@ -511,6 +509,9 @@
             ITENS_PEDIDO e uma classe associativa entre PRODUTO e PEDIDO
             contendo n_pedido, cod_produto, quantidade e preco_unitario.
           </li>
+          <li>
+            ENDERECO contém cod_end como chave primaria, cep, estado, cidade, bairro, rua e número.
+          </li>
           <p>Adicionado tabela "HIST_PRODUTO" para armazendar alteracoes na tabela "PRODUTO", possibilitando consultas futura de valores vigentes a data solicitacao.</p>
           <p>Adicionado tabela "HIST_STATUS" para armazenar as datas de movimentacao do pedido, tambem para possibilitar futuras consultas.</p>
         </ul>
@@ -518,7 +519,7 @@
 
       <h3>Diagrama de Caso de Uso (UseCase)</h3>
       <img
-        src="https://i.ibb.co/jrRw1XH/UseCase.jpg"
+        src="https://i.ibb.co/zFtmWVj/image.png"
         alt="Diagrama de Caso de Uso"
       />
 
@@ -540,10 +541,11 @@
           <li>
             Navegação otimizada e um desenvolvimento modular e reutilizável
           </li>
+          <li>Utilizado biblioteca Bootstrap para estilização</li>
         </ul>
         <h3>Back-end:</h3>
         <p>
-          O back-end será implementado em Java, adotando o padrão arquitetural
+          O back-end será implementado em Java(JPA), adotando o padrão arquitetural
           Model-View-Controller (MVC), que organiza a aplicação em três camadas
           principais:
         </p>
@@ -554,7 +556,7 @@
           </li>
           <li>
             View: Encarregada de apresentar os dados ao usuário por meio da
-            interface.
+            interface em Angular.
           </li>
           <li>
             Controller: Atua como intermediário, gerenciando a comunicação entre
