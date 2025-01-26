@@ -1,0 +1,40 @@
+<div
+  class="container d-flex justify-content-center align-items-start mt-3 mb-5"
+  style="min-height: calc(100vh - 280px); padding-top: 1rem"
+>
+  <div class="card p-4 shadow" style="width: 100%; max-width: 900px">
+    <h2 class="text-center custom-name mb-4">Lista de Produtos</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-primary">
+          <tr>
+            <th>ID</th>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Preço</th>
+            <th>Quantidade</th>
+            <th>Categoria</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let produto of reponseProdutos?.data">
+            <td>{{ produto.cod_produto }}</td>
+            <td>{{ produto.nome }}</td>
+            <td>{{ produto.descricao }}</td>
+            <td>{{ produto.preco | currency : "BRL" }}</td>
+            <td>{{ produto.quantidade }}</td>
+            <td>{{ produto.categoria }}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="text-center mt-4">
+      <button
+        class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        (click)="goBack()"
+      >
+        <i class="fas fa-arrow-left me-2"></i> Voltar
+      </button>
+    </div>
+  </div>
+</div>

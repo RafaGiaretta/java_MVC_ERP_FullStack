@@ -1,0 +1,20 @@
+.custom-btn {
+  border: solid 1px var(--color-primary);
+}
+
+.custom-btn:hover {
+  background-color: var(--color-complementary);
+  color: #fff;
+}
+
+.custom-btn:active {
+  background-color: var(--color-secondary);
+}
+
+.custon-link {
+  color: var(--color-primary);
+}
+
+.form-label {
+  font-family: var(--font-secondary);
+}

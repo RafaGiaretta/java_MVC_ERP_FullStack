@@ -1,0 +1,46 @@
+<div
+  class="container d-flex justify-content-center align-items-start mt-3 mb-5"
+  style="min-height: calc(100vh - 280px); padding-top: 1rem"
+>
+  <div class="card p-4 shadow" style="width: 100%; max-width: 700px">
+    <h2 class="text-center custom-name mb-4">Bem-vindo {{ name }}</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-3 text-center">
+        <p class="mb-2">Gerencie cadastro e informações dos clientes</p>
+        <a
+          routerLink="/clientes"
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-users me-2"></i> Clientes
+        </a>
+      </div>
+      <div class="col-md-6 mb-3 text-center">
+        <p class="mb-2">Controle de estoque e descrições de produtos</p>
+        <a
+          routerLink="/produtos"
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-box me-2"></i> Produtos
+        </a>
+      </div>
+      <div class="col-md-6 mb-3 text-center">
+        <p class="mb-2">Acompanhe e realize pedidos</p>
+        <a
+          routerLink="/pedidos"
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-shopping-cart me-2"></i> Pedidos
+        </a>
+      </div>
+      <div class="col-md-6 mb-3 text-center">
+        <p class="mb-2">Visualize métricas e análises de vendas</p>
+        <a
+          routerLink="/relatorios"
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-chart-line me-2"></i> Relatórios
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

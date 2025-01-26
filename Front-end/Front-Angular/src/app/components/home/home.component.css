@@ -1,0 +1,35 @@
+.form-control:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: var(--color-complementary);
+  outline: 0;
+  box-shadow: 0 0 0 0.1rem var(--color-complementary);
+}
+
+.custom-btn {
+  background-color: var(--color-primary);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.375rem;
+  transition: all 0.3s ease;
+  font-family: var(--font-secondary);
+}
+
+.custom-btn:hover {
+  background-color: var(--color-complementary); /* Cor ao passar o mouse */
+  color: #fff; /* Texto permanece branco */
+}
+
+.custom-btn:active {
+  background-color: var(--color-secondary); /* Cor ao clicar */
+}
+
+.custon-link {
+  color: var(--color-primary);
+}
+
+.form-label {
+  font-family: var(--font-secondary);
+}

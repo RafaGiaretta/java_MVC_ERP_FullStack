@@ -1,0 +1,42 @@
+<div
+  class="container d-flex justify-content-center align-items-start mt-3 mb+5"
+  style="min-height: calc(100vh - 280px); padding-top: 1rem"
+>
+  <div class="card p-4 shadow" style="width: 90%; max-width: 500px">
+    <h2 class="text-center custon-login mb-4">Login</h2>
+    <form>
+      <div class="mb-3">
+        <label for="login" class="form-label">Usuário</label>
+        <input
+          type="text"
+          id="login"
+          class="form-control"
+          placeholder="Digite seu usuário"
+          required
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Senha</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          placeholder="Digite sua senha"
+          required
+        />
+      </div>
+      <button
+        type="button"
+        routerLink="/principal"
+        class="btn btn-primary custom-btn w-100 mb-3"
+      >
+        Entrar
+      </button>
+      <div class="text-center">
+        <a href="#" class="text-decoration-none custon-link"
+          >Esqueceu sua senha?</a
+        >
+      </div>
+    </form>
+  </div>
+</div>

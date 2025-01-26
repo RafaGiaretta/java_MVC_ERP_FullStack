@@ -1,0 +1,56 @@
+<div
+  class="container d-flex justify-content-center align-items-start mt-3 mb-5"
+  style="min-height: calc(100vh - 280px); padding-top: 1rem"
+>
+  <div class="card p-4 shadow" style="width: 100%; max-width: 700px">
+    <h2 class="text-center custom-name mb-4">Gestão de Produtos</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6 mb-3 text-center">
+        <p class="mb-2">Cadastrar um novo produto</p>
+        <a
+          routerLink="/produtos/cadastrar"
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-plus-circle me-2"></i> Cadastrar Produto
+        </a>
+      </div>
+      <div class="col-md-6 mb-3 text-center">
+        <p class="mb-2">Visualizar todos os produtos cadastrados</p>
+        <a
+          routerLink="/produtos/listar-produtos"
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-eye me-2"></i> Listar Produtos
+        </a>
+      </div>
+      <div class="col-md-6 mb-3 text-center">
+        <p class="mb-2">Editar informações de um produto</p>
+        <a
+          routerLink="/produtos/editar"
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-edit me-2"></i> Editar Produto
+        </a>
+      </div>
+      <div class="col-md-6 mb-3 text-center">
+        <p class="mb-2">Deletar um produto</p>
+        <a
+          routerLink="/produtos/deletar"
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+        >
+          <i class="fas fa-trash-alt me-2"></i> Deletar Produto
+        </a>
+      </div>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="col-12 text-center">
+        <button
+          class="btn custom-btn btn-block d-flex align-items-center justify-content-center"
+          (click)="goBack()"
+        >
+          <i class="fas fa-arrow-left me-2"></i> Voltar
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

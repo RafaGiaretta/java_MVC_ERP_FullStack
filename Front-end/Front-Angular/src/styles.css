@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Nostalgic+Whispers&family=LEMON+MILK&display=swap");
+:root {
+  --font-primary: "Nostalgic Whispers Regular", sans-serif;
+  --font-secondary: "LEMON MILK", sans-serif;
+
+  /* Cores principais */
+  --color-primary: #6f150c;
+  --color-secondary: #000000;
+
+  /* Cores complementares */
+  --color-complementary: #b4904d;
+}
+
+/* Usando as variáveis no seu CSS */
+body {
+  font-family: var(--font-primary);
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: var(--font-secondary);
+  color: var(--color-primary);
+}
+
+.button {
+  background-color: var(--color-complementary);
+  color: var(--color-secondary);
+}
+
+.navbar {
+  background-color: var(--color-primary);
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  height: 100vh;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("assets/Pattern-bg.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  opacity: 0.3;
+  z-index: -1;
+}
